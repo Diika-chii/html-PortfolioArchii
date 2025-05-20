@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="Portname-logo">
+                <a href="./index.html"><span class="Portname-lit">DI</span>KACHi</a>
+            </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="nav-links">
+                <a href="./about.html">About Me</a>
+                <a class="Port-active">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Portfolio Hero Section -->
+    <div class="portfolio-hero">
+        <!-- <h2>My Work</h2> -->
+        <p>Explore my selected projects and creative endeavors</p>
+        <div class="portfolio-filters">
+            <button onclick="filterbtn()" class="filter-btn active" data-type="all">All</button>
+            <!-- <button onclick="filterbtnactive()" class="filter-btn " data-type="web">Web Design</button> -->
+            
+            <!-- <button class="filter-btn" data-filter="architectural-projects and architectural-projects1">Architectural Design</button> -->
+        </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        
+        <!-- <a href="./Planproject.html">
+            <div class="portfolio item" data-category="uiux">
+             <img src="./images/undraw_observations_cv73.png" width="600" height="400" alt="UI/UX Project">
+            </div> 
+        </a>
+
+        <a href="./Tourlog-project.html">
+           <div class="portfolio item" data-category="uiux">
+            <img src="./images/undraw_observations_cv73.png" width="600" height="400" alt="UI/UX Project">
+            <h3 class="item-label">TOUR LOG</h3>
+           </div> 
+        </a>
+        
+        <a href="./gradetrack-projects.html">
+           <div class="portfolio item" data-category="uiux">
+            <img src="./images/undraw_observations_cv73.png" width="600" height="400" alt="UI/UX Project">
+            <h3 class="item-label">REPORT CARD</h3>
+           </div> 
+        </a> -->
+
+        <a href="./architectural-projects1.html">
+             <div class="portfolio itemA" data-category="architecture">
+              <img src="./images/Ambrose main.jpg" width="500" height="350" alt="Architectural Project"> 
+              <h3 class="item-label">SUNDAY's HOUSE</h3>
+             </div>  
+        </a>
+        
+        <a href="./architectural-projects nelson .html">
+           <div class="portfolio itemA" data-category="architecture">
+            <img src="./images/Nelson elevation.jpeg" width="500" height="250" alt="Architectural Project"> 
+            <h3 class="item-label">NELSON's HOUSE</h3>
+           </div> 
+        </a>
+
+        <a href="./architectural-projects UHL .html">
+           <div class="portfolio itemA" data-category="architecture">
+            <img src="./images/EVENT center.jpeg" width="500" height="350" alt="Architectural Project"> 
+            <h3 class="item-label">UHL EVENTS</h3>
+           </div>  
+        </a>
+        
+        
+        
+
+        <a href="./architectural-projects Sunday's House.html">
+          <div class="portfolio itemA" data-category="architecture">
+            <img src="./images/HOME.jpeg" width="500" height="350" alt="Architectural Project"> 
+            <h3 class="item-label">FIRST STRIDE</h3>
+          </div>  
+        </a>
+        
+       </div>
+        
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/okonkwo-onyedikachukwu-n" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#" class="social-icon"><i class="fab fa-github"></i></a> -->
+            <a href=" https://x.com/Okonkwoon1?s=08 " class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+        </div>
+        <p>&copy; 2025 onyedikachi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script>
+        window.onload = function () {
+          filterbtnactive();
+        };
+      </script> -->
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Log - Your Travel Companion</title>
+    <link rel="stylesheet" href="Tourstyle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tour Log</div>
+
+        <div class="language-selector">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Experiences</h1>
+                <p>Glade you are joining us on an unforgettable journey through culture, history, and adventure</p>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <h2>Welcome to Your Tour Experience</h2>
+            <p>We are dedicated to providing exceptional tour experiences that create lasting memories. Our expert guides will take you through the most fascinating destinations, revealing hidden gems and sharing local insights that make each journey special.</p>
+        </section>
+        
+        <section class="activity-dashboard">
+         <div class="date-selector">
+            <h2>Schedule</h2>
+            <div class="day-buttons">
+                <button class="day-btn active" data-day="1">Day 1</button>
+                <button class="day-btn" data-day="2">Day 2</button>
+                <button class="day-btn" data-day="3">Day 3</button>
+                <button class="day-btn" data-day="4">Day 4</button>
+                <button class="day-btn" data-day="5">Day 5</button>
+                <button class="day-btn" data-day="6">Day 6</button>
+                <!-- <button class="day-btn" data-day="3">Day 7</button>
+                <button class="day-btn" data-day="4">Day 8</button>
+                <button class="day-btn" data-day="5">Day 9</button> -->
+            </div>
+         </div>
+         <div class="sub-dashboard">
+          <h3>Day 1</h3>
+             <div class="scroll-nav scroll-left">&#10094;</div>
+             <div class="scroll-nav scroll-right">&#10095;</div>
+          <div class="timeline">
+             
+             <div class="time-card"  id="time-schedule">
+                 <div class="item-discrip" >
+                   <h4>12:00</h4>
+                   <h4>Arrival</h4>
+                   <p>Arrival at Berlin Tegel airport.( Please inform us your flight detils and any personal preference if necessary).
+                   Our taxi driver is waiting for you at the exit with your name to drive you with privet taxi to Mercure hotel Berlin.</p> 
+                 </div>
+                    
+                <div class="item-card">
+                   <button class="btnreminder-item">
+                    <img src="./images/reminder-alert-svgrepo-com.svg" width="30" alt="">  
+                    <div class="reminder-discri">Set Reminder</div>
+                   </button>
+                   <button class="btnrsvp-item">
+                    <img src="./images/gui-rsvp-svgrepo-com.svg" width="30" alt="">  
+                    <div class="rsvp-discri">RSVP</div>
+                   </button>
+                </div>
+             </div>
+
+             <div class="time-card" id="time-schedule">
+                 <div class="item-discrip">
+                     <h4>13:00</h4>
+                     <h4>Lunch</h4>
+                     <p>Lunch at the hotel restaurant</p>
+                 </div>
+                
+                <div class="item-card">
+                   <button class="btnreminder-item">
+                    <img src="./images/reminder-alert-svgrepo-com.svg" width="30" alt="">  
+                    <div class="reminder-discri">Set Reminder</div>
+                   </button>
+                   <button class="btnrsvp-item">
+                    <img src="./images/gui-rsvp-svgrepo-com.svg" width="30" alt="">  
+                    <div class="rsvp-discri">RSVP</div>
+                   </button>
+                </div>
+             </div>
+
+             <div class="time-card" id="time-schedule">
+                <div class="item-discrip">
+                    <h4>14:00</h4>
+                    <h4>Arrival Tour</h4>
+                    <p>We head for a guided visit to the Berlin wall, Checkpoint Charlie, Reichstag, Tiergarten, Victory column 
+                        (Siegessaule), Memorial to the Holocaust , Bradnburg gate.</p>
+                </div>
+                
+                <div class="item-card">
+                   <button class="btnreminder-item">
+                    <img src="./images/reminder-alert-svgrepo-com.svg" width="30" alt="">  
+                    <div class="reminder-discri">Set Reminder</div>
+                   </button>
+                   <button class="btnrsvp-item">
+                    <img src="./images/gui-rsvp-svgrepo-com.svg" width="30" alt="">  
+                    <div class="rsvp-discri">RSVP</div>
+                   </button>
+                </div>
+             </div>
+
+             <div class="time-card" id="time-schedule">
+                <div class="item-discrip">
+                    <h4>19:30</h4>
+                    <h4>Dinner</h4>
+                    <p>Dinner and Overnight leisure at the hotel in Berlin.</p>
+                </div>
+                
+                <div class="item-card">
+                   <button class="btnreminder-item">
+                    <img src="./images/reminder-alert-svgrepo-com.svg" width="30" alt="">  
+                    <div class="reminder-discri">Set Reminder</div>
+                   </button>
+                   <button class="btnrsvp-item">
+                    <img src="./images/gui-rsvp-svgrepo-com.svg" width="30" alt="">  
+                    <div class="rsvp-discri">RSVP</div>
+                   </button>
+                </div>
+             </div>
+
+             <div class="time-card" id="time-schedule">
+                <div class="item-discrip">
+                    <h4>22:30</h4>
+                    <h4>Lights Out</h4>
+                    <p>End of days activity, Bed time.</p>
+                </div>
+                
+                <div class="item-card">
+                   <button class="btnreminder-item">
+                    <img src="./images/reminder-alert-svgrepo-com.svg" width="30" alt="">  
+                    <div class="reminder-discri">Set Reminder</div>
+                   </button>
+                   <button class="btnrsvp-item">
+                    <img src="./images/gui-rsvp-svgrepo-com.svg" width="30" alt="">  
+                    <div class="rsvp-discri">RSVP</div>
+                   </button>
+                </div>
+             </div>
+
+             <div class="time-card" id="time-schedule">
+            
+             </div>
+          </div>
+         </div> 
+        </section>
+        
+        
+        
+        <section class="side-attraction">
+            <div class="nearby-preview">
+            <h2>Nearby Attractions</h2>
+                <div class="scroll-nav scroll-left">&#10094;</div>
+                <div class="scroll-nav scroll-right">&#10095;</div>
+            <div class="attractions-container">
+
+                <div class="attraction-card">
+                    <img src="./images/winery.jpg" width="350" height="300"  alt="Local winery">
+                    <h3>Local winery</h3>
+                    <p>Just 5 minutes away</p>
+                    <button class="visit-btn">Direction</button>
+                </div>
+                <div class="attraction-card">
+                    <img src="./images/99_236_und_99_7245_der_harzer_schmalspurbahnen_in_drei_annen_hohne_02 quedlinburg.jpg" width="350" height="300" alt="Historic Market">
+                    <h3>Ride in History through the mountain</h3>
+                    <p>30 minutes drive</p>
+                    <button class="visit-btn">Direction</button>
+                </div>
+                <div class="attraction-card">
+                    <img src="./images/halftimber building.jpg" width="350" height="300" alt="Traditional Building">
+                    <h3>Traditional Building</h3>
+                    <p>20 minutes walk</p>
+                    <button class="visit-btn">Direction</button>
+                </div>
+                <div class="attraction-card">
+                    <img src="./images/castle-entrance-in-stolberg-germany-chuck-stewart.jpg" width="350" height="300" alt="Historic Castle">
+                    <h3>Historic Castle</h3>
+                    <p>35 minutes walk</p>
+                    <button class="visit-btn">Direction</button>
+                </div>
+                <div class="attraction-card">
+                    <img src="./images/night cruise.jpg" width="350" height="300" alt="Night Festival">
+                    <h3>Festival</h3>
+                    <p>15 minutes walk</p>
+                    <button class="visit-btn">Direction</button>
+                </div>
+            </div>
+            <a href="attractions.html" class="view-all">View All Attractions</a>
+          </div>
+        </section>
+
+        <section class="reviews-section">
+            <h2> Reviews</h2>
+          <div class="subsection-group">
+            
+            <!-- Subsection A -->
+            <div class="subsectionA">
+              <h3>Tour Reviews </h3>
+              <div class="review-list">
+                <div class="review-card">
+                  <p>"Amazing experience! Everything was perfectly planned."</p>
+                  <span>- Clara</span>
+                  <div class="review-meta">Sunday · 10:00 AM</div>
+                </div>
+                <div class="review-card">
+                  <p>"The guides were knowledgeable and friendly."</p>
+                  <span>- Michael</span>
+                  <div class="review-meta">Monday · 3:30 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Loved the group energy and the destinations."</p>
+                  <span>- Aisha</span>
+                  <div class="review-meta">Tuesday · 1:15 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Accommodations were excellent throughout."</p>
+                  <span>- Daniel</span>
+                  <div class="review-meta">Wednesday · 8:45 AM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Would definitely join another tour with them!"</p>
+                  <span>- Yuki</span>
+                  <div class="review-meta">Thursday · 6:00 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Transportation was smooth and timely."</p>
+                  <span>- Sara</span>
+                  <div class="review-meta">Friday · 2:00 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Great value for money and fun memories!"</p>
+                  <span>- Tom</span>
+                  <div class="review-meta">Saturday · 11:20 AM</div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Subsection B -->
+            <div class="subsectionB">
+              <h3>Attractions Reviews</h3>
+              <div class="review-list scrollable">
+                <div class="review-card">
+                  <p>"The waterfall trail was breathtaking!"</p>
+                  <span>- Emeka</span>
+                  <div class="review-meta">Monday · 4:00 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Loved the local market – such rich culture!"</p>
+                  <span>- Sophie</span>
+                  <div class="review-meta">Tuesday · 9:30 AM</div>
+                </div>
+                <div class="review-card">
+                  <p>"The museum tour was so insightful."</p>
+                  <span>- Leo</span>
+                  <div class="review-meta">Wednesday · 12:45 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"The beach sunsets were unforgettable."</p>
+                  <span>- Fatima</span>
+                  <div class="review-meta">Thursday · 5:15 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Great food stops and very friendly locals."</p>
+                  <span>- Jonas</span>
+                  <div class="review-meta">Friday · 2:20 PM</div>
+                </div>
+                <div class="review-card">
+                  <p>"The hiking trail was challenging but fun!"</p>
+                  <span>- Maya</span>
+                  <div class="review-meta">Saturday · 10:00 AM</div>
+                </div>
+                <div class="review-card">
+                  <p>"Street music performances added to the charm."</p>
+                  <span>- Yusuf</span>
+                  <div class="review-meta">Sunday · 7:45 PM</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+           
+          </section>
+         
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Tour Log</div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Nearby Attractions</a></li>
+                    <li><a href="share.html">Share Experience</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">WhatsApp</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Tour Log. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/timeline-scroll.js"></script>
+</body>
+</html>

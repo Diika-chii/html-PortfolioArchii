@@ -1,0 +1,613 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+.btnreminder-item:hover {
+    background-color: tomato;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0066cc;
+}
+.login-form {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.login-form input {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 8px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background: #0056b3;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #0066cc;
+    color: white;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Hero Section Styles */
+.hero, .attractions-hero, .share-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.welcome h2 {
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.welcome p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Day Selector */
+.activity-dashboard {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    border-top: #C9B0AC  1px solid;
+    max-width: auto;
+    padding: 0px;
+    border-bottom:  #C9B0AC  1px solid;
+    overflow: hidden;
+}
+
+.nearby-preview {
+    background-color: white;
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+}
+.nearby-preview h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+.reviews-section {
+    display: block;
+    background-color: white;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .reviews-section h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .subsection-group {
+    display: flex;
+    gap: 4rem; 
+    flex-wrap: wrap;
+  }
+  .subsectionA,
+.subsectionB {
+  flex: 1 1 45%;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+  padding: 10px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+  
+  .subsectionA h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+    padding-left: 10px;
+  }
+  .subsectionB h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+    padding-left: 10px;  
+  }
+  
+  .review-list {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #afafb3 #f0f0f0;
+  }
+  
+  .review-card {
+    background-color: white;
+    border: 1px solid #d6c3aa;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 15px;
+  }
+  
+  .review-card p {
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  
+  .review-card span {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .review-meta {
+    font-size: 13px;
+    color: #888;
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+.tour-review-card {
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-left: 4px solid #0066cc;
+}
+
+.tour-review-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #0066cc;
+}
+
+.tour-date {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.date-selector {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    max-width: 300px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.date-selector h2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.day-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.day-btn {
+    display: block;
+    margin: 0 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #d6c3aa;
+}
+
+.day-btn.active {
+    background-color: #0066cc;
+    color: white;
+}
+
+/* Timeline Section */
+
+.sub-dashboard {
+    position: relative;
+    display: block;
+    background-color: white;
+    border-left: #C9B0AC 1px solid;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+.sub-dashboard h3 {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin: 0px;
+    color: #0066cc;
+    position: sticky;
+}
+.timeline {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    overflow-x: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #afafb3 #f0f0f0; 
+}
+
+
+
+
+.item-discrip {
+    max-width: 550px;
+    width: 100%;
+    max-height: 280px;
+    height: 100%;
+}
+.item-card {
+    position: absolute;
+    max-width: 350px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+}
+.btnreminder-item {
+    display: flex;
+    position: static;
+    bottom: 20px;
+    background-color: transparent;
+    width: 140px;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: tomato 1px solid;
+}
+.btnrsvp-item {
+    display: flex;
+    position: relative;
+    color: black;
+    background-color: transparent;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 10px; 
+    border: #0066cc 1px solid;
+}
+
+.timeline::-webkit-scrollbar {
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.timeline::-webkit-scrollbar-track {
+    background: #998383;
+    border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background-color: #808283;
+    border-radius: 4px;
+}
+
+/* side attraction  */
+.side-attraction {
+    padding: 0px 0px;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+/* Scroll navigation controls */
+.scroll-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(92, 93, 95, 0.8);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+
+.scroll-nav:hover {
+    background-color: rgba(71, 47, 25, 0.26);
+}
+
+.attractions-container {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    gap: 30px;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px 15px 10px 15px;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: thin;
+    scrollbar-color: rgba(107, 111, 114, 0.5) rgba(0, 0, 0, 0.05);
+    margin-bottom: 0; 
+    position: relative;
+}
+
+.attractions-container::-webkit-scrollbar {
+    height: 0px; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+}
+
+.attractions-container::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 111, 114, 0.8); 
+    border-radius: 5px;
+}
+
+.attractions-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    margin: 0 10px; 
+}
+
+/* View All Link Styling */
+.view-all {
+    display: block;
+    text-align: right;
+    margin: 10px 20px 5px 0;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #0066cc;
+    position: relative;
+    z-index: 10; 
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.attraction-card {
+    background-color: white;
+    padding: .5rem;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+} 
+
+.time-card {
+    background-color: whitesmoke;
+    padding: 1rem;
+    min-width: 300px;
+    width: 100%;
+    height: 440px;
+    position: relative;
+    border: 1px solid #d6c3aa;
+    border-radius: 10px;
+    overflow: auto;
+    align-content: flex-start;
+    justify-items: center; 
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+}
+
+.attraction-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.attraction-content {
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: #aaa;
+}
